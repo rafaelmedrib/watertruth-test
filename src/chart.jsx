@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    ResponsiveContainer, YAxis, XAxis, CartesianGrid, Legend, Label, Scatter, Line, ComposedChart } from "recharts";
+    ResponsiveContainer, YAxis, XAxis, CartesianGrid, Legend, Label, Scatter, Line, ComposedChart} from "recharts";
 import { CustomizedProdDot, CustomizedGddDot } from "./CustomizedDots";
 import * as data from "./line.json";
 
@@ -25,7 +25,7 @@ function Chart() {
                 
                 <CartesianGrid/>
 
-                <XAxis dataKey="dias" type="number" domain={[0, "dataMax + 10"]} tickCount={6} minTickGap={30}/>
+                <XAxis dataKey="dias" type="number" domain={[0, "dataMax + 10"]} tickCount={6} minTickGap={30} />
 
                 <YAxis yAxisId="prod" tickCount={14}>
                     <Label id="prod-label" value="Produtividade" angle={-90} position="insideLeft" fontFamily="sans-serif"/>
@@ -50,7 +50,6 @@ function Chart() {
                 <Line dataKey="value" name="Graus Dia Acumulado Atual" data={gdd_observado} yAxisId="gdd" 
                     stroke="rgb(255, 76, 41)" strokeWidth={4} legendType="plainline" dot={false}
                 />
-
             </ComposedChart>
  </ResponsiveContainer>
     )};

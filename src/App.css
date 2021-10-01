@@ -1,8 +1,21 @@
 .app-wrapper {
-    width: 700px;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #5C7AEA;
+}
+
+.chart-wrapper {
+    background-color: #E6E6E6;
+    width: 70vw;
+    height: 65vh;
+    position: relative;
+    top: 10vh;
 }
 
 #gdd-label, #prod-label {
     text-anchor: middle;
+}
+
+#header {
+    background-color: #14279B;
 }
